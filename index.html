@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Números Romanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Validador de Números Romanos (1-100)</h2>
+    <input type="text" id="romanInput" placeholder="Ingresa un número romano">
+    <button onclick="validarRomanos()">Validar</button>
+    
+    <p id="errorMessage" style="color: red; display: none;"></p>
+    <p id="successMessage" style="color: green; display: none;"></p>
+
+    <div id="pasos" style="display: none;">
+        <h3>Pasos del autómata:</h3>
+        <pre id="rutaEstados"></pre>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

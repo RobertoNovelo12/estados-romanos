@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+h2 {
+    color: #2d6a4f;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    border: 2px solid #2d6a4f;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow 0.3s, transform 0.3s ease-in;
+    z-index: 10000;
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 10px rgb(9, 255, 0);
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2d6a4f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #4caf50;
+    transform: scale(1.1);
+}
+
+#errorMessage, #successMessage {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#errorMessage {
+    color: red;
+}
+
+#successMessage {
+    color: green;
+}
+
+#pasos {
+    margin-top: 30px; /* Ajustado para separar los pasos de los otros elementos */
+    text-align: left;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rutaEstados {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
