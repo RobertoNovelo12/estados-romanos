@@ -35,7 +35,7 @@ function validarRomanos() {
     }
 
     // Verificación de reglas romanas comunes
-    if (/(IIII|VV|XXXX|LL|CCCC|DD|MMMM|IL|IC|ID|IM|VX|VL|VC|VD|VM|XD|XM|LC|LD|LM|DM)/.test(romanInput)) {
+    if (/(IIII|VV|XXXX|LL|CCCC|DD|MMMM|IL|IC|ID|IM|VX|VL|VC|VD|VM|XD|XM|LC|LD|LM|DM|XXIXX)/.test(romanInput)) {
         errorMessage.textContent = "Número romano inválido: Secuencias incorrectas como 'IIII', 'VV', etc. no están permitidas.";
         errorMessage.style.display = "block";
         return;
